@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       <h1 className='text-3xl font-bold text-center'>Peace Blog Posts</h1>
-      <div className='grid grid-cols-2 mt-5'>
+      <div className='grid lg:md:grid-cols-2 sm:grid-cols-1 mt-5'>
       {posts.map(post => (
         <div key={post.id} className='border m-3 p-3'>
           <h1 className='font-bold text-lg'>{post.title}</h1>
