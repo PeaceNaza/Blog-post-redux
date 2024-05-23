@@ -1,6 +1,6 @@
-
-  [
-    {
+const postsData = [
+    
+  {
       "id": 1,
       "title": "Introduction to CSS: A Beginner's Guide to Styling a Web Page",
       "date": "Nov 10, 2023",
@@ -36,3 +36,4 @@
       "content": "A navigation bar is an essential part of any website. In this tutorial, you'll learn how to create a navigation bar using HTML and CSS. We'll cover everything from setting up your navigation links to styling your bar, so you can create a professional-looking navigation bar for your website. Let's get started!"
     }
   ]
+ export default postsData;

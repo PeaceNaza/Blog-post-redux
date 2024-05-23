@@ -1,13 +1,15 @@
-import axios from "axios";
+//postsData is an array of posts imported from post.js file
+import postsData from "../Data/post";
 
-//A Basic format for a action 
+// A Basic format for an action
 export const fetchposts = () => async(dispatch) => {
-    dispatch({type: "FETCH_POST_START"})
+    dispatch({ type: "FETCH_POST_START" });
     try {
-      const res = await axios.get("../../public/post.json") 
-      dispatch({type: "FETCH_POST_SUCCESS", payload: res.data})
+        // Assuming postsData is the array of posts directly
+        dispatch({ type: "FETCH_POST_SUCCESS", payload: postsData });
     } catch (err) {
-      dispatch({type: "FETCH_POST_FAIL", payload: err})
+        dispatch({ type: "FETCH_POST_FAIL", payload: err });
     }
-} 
+}
+
 
