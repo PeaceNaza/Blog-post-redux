@@ -1,4 +1,3 @@
 # React + Vite
 
-### Learning state management with Redux 
-
+## Learning state management with Redux
