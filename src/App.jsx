@@ -17,17 +17,20 @@ function App() {
   if (error) return <p className='font-bold text-xl text-red-600'>Error loading posts</p>
 
   return (
-    <div>
+    <>
       <h1 className='text-3xl font-bold text-center'>Peace Blog Posts</h1>
+      <div className='grid grid-cols-2 mt-5'>
       {posts.map(post => (
-        <div key={post.id}>
-          <h1>{post.title}</h1>
-          <p>{post.date}</p>
-          <span>{post.author}</span>
-          <p>{post.content}</p>
+        <div key={post.id} className='border m-3 p-3'>
+          <h1 className='font-bold text-lg'>{post.title}</h1>
+          <p className='text-xs'>{post.date}</p>
+          <span className='text-xs'>{post.author}</span>
+          <p className='text-sm'>{post.content}</p>
         </div>
       ))}
-    </div>
+      </div>
+      
+    </>
   )
 }
 
